@@ -2,7 +2,7 @@
   "name": "elasticsearch-reindex",
   "version": "1.0.10",
   "description": "Elasticsearch reindex tool",
-  "main": "index.js",
+  "main": "./lib/migrator.js",
   "scripts": {
     "test": "npm test"
   },
