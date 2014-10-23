@@ -34,6 +34,8 @@ var options = {
   custom_indexer: cli.args[0]
 }
 
-var migrator = new Migrator(options);
+var migrator = new Migrator(options, function(msg){
+  if (msg == 'done') {process.exit()};
+});
 
 migrator.migrate()
